@@ -1,0 +1,12 @@
+{
+  "name": "documind",
+  "private": true,
+  "scripts": {
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "dev": "pnpm --parallel --filter api --filter web run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test"
+  }
+}
